@@ -1,0 +1,6 @@
+<h2>Parent Component</h2>
+<!-- <p>Data from Child: {{ childData }}</p>
+<app-child-component (childEvent)="onChildEvent($event)"></app-child-component> -->
+
+<input type="text" [(ngModel)]="parentData" placeholder="Enter data">
+<app-child-component [dataFromParent]="parentData"></app-child-component>
